@@ -13,7 +13,7 @@ function followFilePath(dir, pathList) {
   if (dirIter.hasNext() == false)
     return null;
 
-  return followFilePath(dir = dirIter.next(), pathList);
+  return followFilePath(dirIter.next(), pathList);
 }
 
 function getFileByPath(path) {
